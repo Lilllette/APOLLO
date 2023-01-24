@@ -1,1 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Standhouder aanmelding</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width-device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+</head>
+
+<style>
+ /* stijl van website*/  
+	body {
+        font-size:20px;
+   		 }
+  /* stijl van header*/    
+   	header {
+ 		background-color: rgba(128, 147, 70, 0.5);
+        color: #000;
+ 		text-align: center;
+ 		padding: 20px;
+        height: 100%;
+    	margin: auto;
+	}
+    
+ /* stijl van navigatie bar*/    
+	ul {
+        list-style-type: none;
+ 		 margin: 0;
+ 		 padding: 0;
+		 width: 10%;
+ 		 background-color: rgba(128, 156, 71, 0.5);
+         height: 100%;
+         position: fixed;
+         overflow: auto;
+	}
+
+	li a {
+	  	display: block;
+ 	 	color: #000;
+ 	 	padding: 8px 16px;
+ 	 	text-decoration: none;
+	}
+/* kleur veranderen tijdens hoveren*/ 
+	li a:hover {
+  		background-color: #555;
+  		color: white;
+	}
+/* stijl van lijnr*/ 
+	hr {
+    	border-style: solid;
+    	border-width: auto;
+    	border-color: rgba(128, 156, 71, 0.5); 
+	}
+
+</style>
+
+<body>
+
+<!-- Sidebar/menu -->
+ 	<ul>
+  		<li><a href="../home.html">Home</a></li>
+    	<li><a href="inloggen.html">Inloggen</a></li>
+    	<li><a href="../aanmelden/aanmelden.html">Aanmelden</a></li>
+  		<li><a href="../standhouder.html">Standhouder</a></li>
+  		<li><a href="../bezoeker.html">Bezoeker</a></li>
+    	<li><a href="../enquete.html">Enquête</a></li>
+  		<li><a href="../contact.html">Contact</a></li>
+	</ul> 
+
+ <!-- Top -->
+	<header>
+		<span><h1>Standhouder aanmelding</h1></span>
+	</header>
+
+    <form action= "standhouder_aanmelding_validatie.php" method="post">
+        <div style="margin-left:25%;margin-right:10%">
+            <label for="naam">Naam</label>
+            <input type="text" id="naam" name="naam">
+        </div>
+        
+        <div style="margin-left:25%;margin-right:10%">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email">
+        </div>
+    
+    	<div style="margin-left:25%;margin-right:10%">
+            <label for="standhouder_beschrijving">Standhouder beschrijving</label>
+            <input type="text" id="naam" name="standhouder_beschrijving">
+        </div>
+    
+        <div style="margin-left:25%;margin-right:10%">
+            <label for="product/dienst_informatie">Product & dienst informatie</label>
+            <input type="text" id="naam" name="product/dienst_informatie">
+        </div>
+    
+        <div style="margin-left:25%;margin-right:10%">
+            <label for="wachtwoord">Wachtwoord</label>
+            <input type="password" id="wachtwoord" name="wachtwoord">
+        </div>
+        
+        <div style="margin-left:25%;margin-right:10%">
+            <label for="wachtwoord_comformatie">Herhaal wachtwoord</label>
+            <input type="password" id="wachtwoord_comformatie" name="wachtwoord_comformatie">
+        </div>
+    
+    	<div style="margin-left:25%;margin-right:10%">
+        	<br><button>Verzenden</button>
+    	</div>
+    </form>
+    
+</body>
+</html>
 
