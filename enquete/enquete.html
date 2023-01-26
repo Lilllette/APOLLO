@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width-device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+	<title>Enquête</title>
+</head>
+
+<style>
+ /* stijl van website*/  
+	body {
+        font-size:20px;
+   		 }
+  /* stijl van header*/    
+   	header {
+ 		background-color: rgba(128, 147, 70, 0.5);
+        color: #000;
+ 		text-align: center;
+ 		padding: 20px;
+        height: 100%;
+    	margin: auto;
+	}
+    
+ /* stijl van navigatie bar*/    
+	ul {
+        list-style-type: none;
+ 		 margin: 0;
+ 		 padding: 0;
+		 width: 1o%;
+ 		 background-color: rgba(128, 156, 71, 0.5);
+         height: 100%;
+         position: fixed;
+         overflow: auto;
+	}
+
+	li a {
+	  	display: block;
+ 	 	color: #000;
+ 	 	padding: 8px 16px;
+ 	 	text-decoration: none;
+	}
+/* kleur veranderen tijdens hoveren*/ 
+	li a:hover {
+  		background-color: #555;
+  		color: white;
+	}
+/* stijl van lijnr*/ 
+	hr {
+    	border-style: solid;
+    	border-width: auto;
+    	border-color: rgba(128, 156, 71, 0.5); 
+	}
+
+
+
+</style>
+
+
+<body>
+
+<!-- Sidebar/menu -->
+ 	<ul>
+  		<li><a href="../home.html">Home</a></li>
+    	<li><a href="../inloggen/inloggen.html">Inloggen</a></li>
+    	<li><a href="../aanmelden/aanmelden.html">Aanmelden</a></li>
+  		<li><a href="../standhouders/standhouder.html">Standhouder</a></li>
+  		<li><a href="../bezoekers/bezoeker.html">Bezoeker</a></li>
+    	<li><a href="../enquete/enquete.html">Enquête</a></li>
+  		<li><a href="../contact/contact.html">Contact</a></li>
+	</ul> 
+
+<!-- Top -->
+	<header>
+		<span><h1>Enquête</h1></span>
+	</header>
+
+<!-- !PAGE CONTENT! -->
+<div style="margin-left:20%;margin-right:10%">
+
+	<div>
+   		<p>consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+    	<hr>
+	</div>
+
+	<div>
+    
+    <form action="enquete_validatie.php" method="post">
+        <div>
+            <input type="radio" id="mening1" name="mening1">
+        	<label for="mening1">De beurs was geweldig!</label>
+        </div>
+        
+        <div>
+            <input type="radio" id="mening2" name="mening2">
+        	<label for="mening2">De beurs was zeer goed.</label> 
+        </div>
+    
+        <div>
+            <input type="radio" id="mening3" name="mening3">
+        	<label for="mening3">De beurs was oke.</label> 
+        </div>
+    
+         <div>
+          	<input type="radio" id="mening4" name="mening4">   
+         	<label for="mening4">De beurs was slecht.</label>
+        </div>
+    
+    	<div>
+          	<input type="radio" id="mening5" name="mening5">   
+         	<label for="mening5">De beurs was rampzalig.</label>
+        </div>
+    
+    	<hr>
+    
+        <div>
+            <label for="pluspunten">Wat waren de pluspunten?</label>
+            <input type="text" id="text" name="pluspunten">
+        </div>
+        
+         <div>
+            <label for="minpunten">Wat waren de minpunten?</label>
+            <input type="text" id="text" name="minpunten">
+        </div>
+    
+    	<div>
+        	<br><button type="submit">Verzenden</button>
+    	</div>
+    
+    	<div>
+        	<br><button type="reset">Verwijderen</button>
+    	</div>
+	</form>
+    
+	</div>
+</div>
+</body>
+</html>
