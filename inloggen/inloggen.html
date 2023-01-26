@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Inloggen</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width-device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+	<title>Apollo Beurs</title>
 </head>
 
 <style>
@@ -27,7 +27,7 @@
         list-style-type: none;
  		 margin: 0;
  		 padding: 0;
-		 width: 10%;
+		 width: 1o%;
  		 background-color: rgba(128, 156, 71, 0.5);
          height: 100%;
          position: fixed;
@@ -52,23 +52,20 @@
     	border-color: rgba(128, 156, 71, 0.5); 
 	}
 
+
 </style>
-
-
 
 <body>
     
-
-
 <!-- Sidebar/menu -->
  	<ul>
   		<li><a href="../home.html">Home</a></li>
     	<li><a href="inloggen.html">Inloggen</a></li>
     	<li><a href="../aanmelden/aanmelden.html">Aanmelden</a></li>
-  		<li><a href="../standhouder.html">Standhouder</a></li>
-  		<li><a href="../bezoeker.html">Bezoeker</a></li>
-    	<li><a href="../enquete.html">Enquête</a></li>
-  		<li><a href="../contact.html">Contact</a></li>
+  		<li><a href="../standhouders/standhouder.html">Standhouder</a></li>
+  		<li><a href="../bezoekers/bezoeker.html">Bezoeker</a></li>
+    	<li><a href="../enquete/enquete.html">Enquête</a></li>
+  		<li><a href="../contact/contact.html">Contact</a></li>
 	</ul> 
 
  <!-- Top -->
@@ -76,33 +73,19 @@
 		<span><h1>Inloggen</h1></span>
 	</header>
 
-    <form action="inlog_validatie.php" method="post">
-        <div style="margin-left:25%;margin-right:10%">
-            <label for="naam">Naam</label>
-            <input type="text" id="naam" name="naam">
-        </div>
-        
-        <div style="margin-left:25%;margin-right:10%">
-            <label for="email">E-mail</label>
-            <input type="email" id="email" name="email">
-        </div>
-        
-        <div style="margin-left:25%;margin-right:10%">
-            <label for="wachtwoord">Wachtwoord</label>
-            <input type="password" id="wachtwoord" name="wachtwoord">
-        </div>
-        
-        <div style="margin-left:25%;margin-right:10%">
-            <label for="wachtwoord_comformatie">Herhaal wachtwoord</label>
-            <input type="password" id="wachtwoord_comformatie" name="wachtwoord_comformatie">
-        </div>
-        
-    	<div style="margin-left:25%;margin-right:10%">
-        <br><button>Inloggen</button>
-    	</div>
-    
-    </form>
+ <div style="margin-left:25%;margin-right:10%">
+        <button><a href="standhouder_inloggen.html">Standhouder</a></button>
+	</div>
+
+	<div style="margin-left:25%;margin-right:10%">
+        <button><a href="data_analist_inloggen.html">Data analist</a></button>
+	</div>
+
+ <div style="margin-left:25%;margin-right:10%">
+        <button><a href="organisator_inloggen.html">Organisator</a></button>
+	</div>
+
+
     
 </body>
 </html>
-
